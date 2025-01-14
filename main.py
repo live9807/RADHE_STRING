@@ -31,7 +31,7 @@ CHANNEL_2_USERNAME = "DP_WORLD7"  # Second channel username
 API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
 API_ID = "14050586"
 
-ADMIN_ID = int(os.getenv("ADMIN_ID", "6726372149"))  # Admin ID for new user notifications
+ADMIN_ID = int(os.getenv("ADMIN_ID", "7001108476"))  # Admin ID for new user notifications
 
 # Flask app for monitoring
 flask_app = Flask(__name__)
