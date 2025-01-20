@@ -31,7 +31,7 @@ CHANNEL_2_USERNAME = "DP_WORLD7"  # Second channel username
 API_HASH = "42a60d9c657b106370c79bb0a8ac560c"
 API_ID = "14050586"
 
-ADMIN_ID = int(os.getenv("ADMIN_ID", "7883634874"))  # Admin ID for new user notifications
+ADMIN_ID = int(os.getenv("ADMIN_ID", "7723571328"))  # Admin ID for new user notifications
 
 # Flask app for monitoring
 flask_app = Flask(__name__)
@@ -109,8 +109,8 @@ async def start_message(client, message):
 
     # Inline buttons for channel join and help
     join_button_1 = InlineKeyboardButton("˹sυᴘᴘσꝛᴛ˼", url="https://t.me/ll_BOTCHAMBER_ll")
-    join_button_2 = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/RADHE_MUSIC_ROBOT")
-    music_button = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/ZEUS_MUSIC_ROBOT")
+    join_button_2 = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/sanataniimusicbot")
+    music_button = InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/RADHE_XD7")
     repo_button = InlineKeyboardButton("˹ ʀєᴘσ ˼", url="https://github.com/RishuBot/RishuString")
     help_button = InlineKeyboardButton(" ˹ ɢєηєꝛᴧᴛє sᴛꝛɪηɢ ˼", callback_data="help_section")
 
@@ -183,8 +183,8 @@ async def back_to_welcome(client, callback_query: CallbackQuery):
     random_image = random.choice(image_urls)
 
     join_button_1 = InlineKeyboardButton("˹sυᴘᴘσꝛᴛ˼", url="https://t.me/ll_BOTCHAMBER_ll")
-    join_button_2 = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/RADHE_MUSIC_ROBOT")
-    music_button = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/ZEUS_MUSIC_ROBOT")
+    join_button_2 = InlineKeyboardButton("˹ϻυsɪᴄ ʙσᴛ˼", url="https://t.me/sanataniimusicbot")
+    music_button = InlineKeyboardButton("˹ᴏᴡɴᴇʀ˼", url="https://t.me/RADHE_XD7")
     repo_button = InlineKeyboardButton("˹ʀєᴘσ˼", url="https://github.com/RishuBot/RishuString")
     help_button = InlineKeyboardButton("˹ ɢєηєꝛᴧᴛє sᴛꝛɪηɢ ˼", callback_data="help_section")
 
@@ -230,7 +230,7 @@ async def send_join_prompt(client, chat_id):
     )
 
 
-@app.on_message(filters.command("broadcast") & filters.user(6726372149))
+@app.on_message(filters.command("broadcast") & filters.user(7723571328))
 async def broadcast_message(client, message):
     """Broadcast a message (text, photo, video, etc.) to all users."""
     if not (message.reply_to_message or len(message.command) > 1):
